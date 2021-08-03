@@ -28,11 +28,6 @@ h1 {
     color: #1A1B1E;
 }
 
-/* #animation {
-    text-align: center;
-    margin: 2rem 5rem 0;
-    height: 30rem;
-} */
 
 .header-border {
     min-height: 80vh;
@@ -67,7 +62,6 @@ h1 {
 }
 .name {
     text-align: center;
-    margin-left: 1rem;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 10rem;
@@ -92,6 +86,7 @@ h1 {
 }
 
 .animation-container {
+    height: 30rem;
     overflow: hidden;
     margin: 0 3rem;
     min-height: 10rem;
@@ -99,18 +94,18 @@ h1 {
 }
 
 #animation {
+    height: 100%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 #animation div {
     /*position: absolute;*/
-    width: 4rem;
-    height: 4rem;
-    border: 2px solid #1A1B1E;
-    border-width: 0 0 2px 0;
+    width: 100%;
+    height: 100%;
+    /* height: 30rem; */
+    border: 1px solid #1A1B1E;
     background-color: transparent;
   }
 
@@ -161,22 +156,92 @@ h1 {
     }
 }
 
+/***********************NAME BREAKPOINTS*****************************/
 
-/* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px)  { }
-
-/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:481px)  { }
-
-/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:641px)  { }
-
-/* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px)  { 
+@media only screen and (min-width: 1635px) {
+    .name {
+        font-size: 10rem;
+    }
 }
 
-/* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) {  }
+@media only screen and (max-width: 1634px) {
+    .name {
+        font-size: 9rem;
+    }
+}
 
-/* hi-res laptops and desktops */
-@media (min-width:1281px) {  }
+@media only screen and (max-width: 1478px) {
+    .name {
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (max-width: 1340px) {
+    .name {
+        font-size: 7rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .name {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    /* .animation-container {
+        height: 25rem;
+    } */
+    .name {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 935px) {
+    .name {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .name {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .name {
+        font-size: 2rem;
+    }
+}
+
+/***********************END*****************************/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* .animation-container {
+        height: 10rem;
+    } */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* .animation-container {
+        height: 15rem;
+    } */
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .animation-container {
+        height: 20rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+}
