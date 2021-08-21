@@ -86,15 +86,17 @@ h1 {
 }
 
 .animation-container {
-    height: 30rem;
+    display: flex;
+    height: 100%;
     overflow: hidden;
-    margin: 0 3rem;
-    min-height: 10rem;
-    max-height: 30rem;
+    margin: 2rem 3rem;
 }
 
 #animation {
+    max-height: 30rem;
+    min-height: 20rem;
     height: 100%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -104,9 +106,15 @@ h1 {
     /*position: absolute;*/
     width: 100%;
     height: 100%;
-    /* height: 30rem; */
+    min-height: 20rem;
+    max-height: 30rem;
     border: 1px solid #1A1B1E;
     background-color: transparent;
+  }
+
+  #animation div:hover {
+    /*position: absolute;*/
+    background-color: #dcdfe2;
   }
 
 #work {
@@ -234,9 +242,9 @@ h1 {
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-    .animation-container {
+    /* .animation-container {
         height: 20rem;
-    }
+    } */
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
