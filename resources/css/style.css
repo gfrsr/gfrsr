@@ -23,7 +23,7 @@ h1 {
 
 #header {
     height: 100%;
-    padding: 5rem 5rem 0 5rem;
+    padding: 2rem 5rem 0 5rem;
     background-color: #fff;
     color: #1A1B1E;
 }
@@ -122,9 +122,67 @@ h1 {
     padding: 5rem;
 }
 
-.work-container {
+.work-container,
+.about-container {
     height: 100%;
+    border-top: 2px solid #1A1B1E;
+    padding: 1rem;
     
+}
+
+.work-container h1,
+.about-container h1 {
+    display: inline;
+    position: relative;
+    top: -2.2rem;
+    left: -1rem;
+    background-color: #fff;
+    padding-right: 1rem;
+}
+
+.project {
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.number {
+    font-size: 1rem;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 50rem;
+}
+
+.project-description {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.image-container {
+    margin-bottom: 1rem;
+}
+
+#about {
+    min-height: 100vh;
+    padding: 5rem;
+    background-color: #fff;
+    color: #1A1B1E;
+}
+
+#contact {
+    min-height: 100vh;
+    padding: 5rem;
+    background-color: #fff;
+    color: #1A1B1E;
 }
 
 /* 1281 and lower */
