@@ -147,13 +147,26 @@ h1 {
 }
 
 .project-title {
-    text-align: center;
-    font-size: 2rem;
+    max-width: 50rem;
+    margin: 0 auto;
     margin-bottom: 3rem;
 }
 
 .number {
     font-size: 1rem;
+    float:left;
+    text-align:left;
+    margin-top: 0.5rem;
+}
+
+.p-name {
+    font-size: 2rem;
+    text-align:center;
+    word-break: break-word;
+}
+
+.p-name a {
+    color: black;
 }
 
 .project-image {
