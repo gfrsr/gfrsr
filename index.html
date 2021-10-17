@@ -3,73 +3,106 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="resources/css/ticker.css">
     <script src="resources/js/anime.min.js"></script>
     <title>Graeme</title>
 </head>
 <body>
-<div id="header">
-    <div class="header-border">
-        <ul class="navbar">
-            <li><a href=#work>WORK</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-        <div class="animation-container">
-        <div id="animation">
-        </div>
-        </div>
-        <div class="title-container"><h1 class="name">GRAEME FRASER</h1>
-            <div class="description-container">
-            <ul class="description">
-            <li>Web Developer</li>
-            <li>Web Developer</li>
-            <li>Web Developer</li>
-            <li>Web Developer</li>
-            <li>Web Developer</li>
-            <li>Web Developer</li>
-            <li>Web Developer</li>
-            <li>Web Developer</li>
-            <li>Web Developer</li>
+    <div id="rectangle1" class="rectangle"></div>
+    <div id="rectangle2" class="rectangle"></div>
+    <div id="rectangle3" class="rectangle"></div>
+    <div id="rectangle4" class="rectangle"></div>
+    <div id="rectangle5" class="rectangle"></div>
+<div id="home">
+        <div class="nav">
+            <div class="nav-right">
+                <a id="work-link" class="link" href="#work">WORK<span id="line-work" class="line"></span></a>
+                <a id="about-link" class="link" href="#about">ABOUT<span id="line-about" class="line"></span></a>
+                <a id="contact-link" class="link" href="#contact">CONTACT<span id="line-contact" class="line"></span></a>
             </div>
-            </ul>
+        </div>
+    <div class="home-container">
+        <div class="home-text">
+        <div class="name"><span class="name-wrapper"><span class="letters">GRAEME FRASER</span></span></div>
+        <div class="sub">Full-stack developer located in Ontario, Canada.</div>
         </div>
     </div>
 </div>
 <div id="work">
     <div class="work-container">
-        <h1>WORK</h1>
-        <div class="project">
-            <div class="project-title"><div class="number">01</div><div class="p-name"><a href="https://www.cavespring.ca" target="_blank">CAVE SPRING VINEYARD</a></div></div>
-            <div class="image-container"><a href="https://www.cavespring.ca" target="_blank"><img class="project-image" src="./resources/img/cave-spring-logo.png" /></a></div>
-            <div class="project-description">A webite me and a team member built using <a href="https://craftcms.com/" target="_blank">Craft CMS</a>, a PHP based content management system,
-                to meet the client's needs. Part of the frontend was built with Vue for furthur functionality 
-                purposes while the rest used Twig, a PHP template engine made by Symphony. The backend was devloped with the Yii PHP framework. </div>
-        </div>
-        <div class="project">
-            <div class="project-title"><div class="number">02</div><div class="p-name"><a href="https://www.places4students.com/" target="_blank">PLACES4STUDENTS.COM</a></div></div>
-            <div class="image-container"><a href="https://www.places4students.com/" target="_blank"><img class="project-image" src="./resources/img/p4s.png" /></a></div>
-            <div class="project-description">Partnered with over 200 colleges & universities in Canada and the US, Places4Students.com is a service for
-                students to find housing. For my co-op I had the opportunity to help develop the admin side of the website using C# with .NET Core to manage listings, banner 
-                advertisements, users and various other items.
+        <div id="project1" class="project">
+            <div class="project-left">
+            <div class="image-container">
+                <a href="https://www.cavespring.ca" target="_blank"><img class="project-image" src="./resources/img/cave-spring-logo.png" /></a>
+            </div>
+            </div>
+            <div class="project-right">
+                <div class="desc-container">
+                <div class="project-title"><a href="https://www.cavespring.ca" target="_blank">CAVE SPRING VINEYARD</a></div>
+                <div class="project-desc">A webite that I, together with a team member, built using <a href="https://craftcms.com/" target="_blank">Craft CMS</a>, a PHP based content management system,
+                    to meet the client's needs. Part of the frontend was built with Vue for furthur functionality 
+                    purposes while the rest used Twig, a PHP template engine made by Symphony. The backend was devloped with the Yii PHP framework. </div>
+                <div></div>
+                </div>
             </div>
         </div>
-        <div class="project">
-            <div class="project-title"><div class="number">03</div><div class="p-name"><a href="https://www.cavespring.ca" target="_blank">THE VINE AGENCY</a></div></div>
-            <div class="image-container"><a href="https://www.cavespring.ca" target="_blank"><img class="project-image" src="./resources/img/the-vine-agency.jpg" style="max-height: 20rem; max-width: 20rem;" /></a></div>
-            <div class="project-description">Similar to Cave Spring Vineyard, this website was also built with <a href="https://craftcms.com/" target="_blank">Craft CMS</a>. I helped develop the site by incorparting numerous features based on the client's needs.</div>
+        <div id="project2" class="project">
+            <div class="project-left">
+            <div class="image-container">
+                <a href="https://www.places4students.com/" target="_blank"><img class="project-image" src="./resources/img/p4s.png" /></a>
+            </div>
+            </div>
+            <div class="project-right">
+                <div class="desc-container">
+                <div class="project-title"><a href="https://www.places4students.com/" target="_blank">PLACES4STUDENTS.COM</a></div>
+                <div class="project-desc">Partnered with over 200 colleges & universities in Canada and the US, Places4Students.com is a service for
+                    students to find housing. For my co-op I had the opportunity to help develop the admin side of the website using C# with .NET Core to manage listings, banner 
+                    advertisements, users and various other items.</div>
+                <div></div>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <div class="project-title"><div class="number">04</div><div class="p-name"><a href="https://www.cavespring.ca" target="_blank">ENCRYPTED MESSAGING</a></div></div>
-            <div class="image-container"><img class="project-image" src="./resources/img/the-vine-agency.jpg" style="max-height: 20rem; max-width: 20rem;" /></div>
-            <div class="project-description"></div>
+        <div id="project3" class="project">
+            <div class="project-left">
+            <div class="image-container">
+                <a href="https://thevineagency.ca/" target="_blank"><img class="project-image" src="./resources/img/the-vine-agency.jpg" /></a>
+            </div>
+            </div>
+            <div class="project-right">
+                <div class="desc-container">
+                <div class="project-title"><a href="https://thevineagency.ca/" target="_blank">THE VINE AGENCY</a></div>
+                <div class="project-desc">Similar to Cave Spring Vineyard, this website was also built with <a href="https://thevineagency.ca/" target="_blank">Craft CMS</a>. I helped develop the site by incorparting numerous features based on the client's needs.</div>
+                <div></div>
+                </div>
+            </div>
         </div>
+    </div>
+</div>
+<div id="about">
+    <div class="about-description">
+        <h2>ABOUT</h2>
+        I am a full-stack developer who enjoys learning new technologies. 
+        My favourite part of programming is building and designing the front-end. 
+        When I am not coding I am producing music.
+    </div>
+    <div class="skills">
+        <h2>SKILLS AND TECHNOLOGIES</h2>
+        <span>Javascript, C#, PHP, Golang, Python, CSS, SCSS<br>
+        Vue.js, .NET, React, Gin Web Framework, MySQL, MSSQL</span>
     </div>
 </div>
 <div id="contact">
     <div class="contact-container">
-        <h1>ABOUT</h1>
+        <div class="contact-text">
+        <div class="email-desc">SEND ME AN EMAIL</div>
+        <div class="email"><a href="mailto:hello@gfrsr.com">hello@gfrsr.com</a></div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/gfrsr/" target="_blank"><img class="sm-icon" src="resources/img/linkedin.svg" /></a>
+            <a href="https://github.com/gfrsr" target="_blank"><img class="sm-icon" src="resources/img/github.svg" /></a>
+        </div>
+        </div>
     </div>
 </div>
-<script src="resources/js/animation.js"></script>
+
+<script src="resources/js/animations.js"></script>
 </body>
 </html>
