@@ -34,8 +34,8 @@ anime.timeline({loop: true})
 function mouseOut(evt) {
   anime({
     targets: '#' + evt.currentTarget.children[0].id,
-    scaleX: [1,0],
-    opacity: [1,0.5],
+    scaleX: 0,
+    opacity: 0.5,
     easing: "easeOutExpo",
     duration: 700,
     // offset: '-=875',
@@ -47,7 +47,7 @@ function mouseOver(evt) {
   anime({
     targets: '#' + evt.currentTarget.children[0].id,
     scaleX: [0,1],
-    opacity: [0.5,1],
+    opacity: 1,
     easing: "easeOutExpo",
     duration: 700,
     // offset: '-=875',
