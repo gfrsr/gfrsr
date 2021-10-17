@@ -17,17 +17,18 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 body {
     background-color: #F8F8F8;
-    overflow-x: hidden;
 }
 
-.wrapper {
+/* .wrapper {
     overflow-x: hidden;
     position: relative;
-}
+} */
 
 div.rectangle {
     overflow: hidden;
@@ -304,5 +305,48 @@ text-decoration: none;
 @media only screen and (max-width: 580px) {
     .name {
         font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .email {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .name {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-right a {
+        font-size: 1rem;
+    }
+
+    .project-desc {
+        font-size: 1rem;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+    }
+
+    .p4s {
+        word-break: break-all;
+        word-wrap: break-word;
+  overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .about-description {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .nav-right a {
+        padding: 0.5rem;
     }
 }
