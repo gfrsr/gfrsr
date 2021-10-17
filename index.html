@@ -7,19 +7,22 @@
     <title>Graeme</title>
 </head>
 <body>
+    <div id="rectangle1" class="rectangle"></div>
+    <div id="rectangle2" class="rectangle"></div>
+    <div id="rectangle3" class="rectangle"></div>
+    <div id="rectangle4" class="rectangle"></div>
+    <div id="rectangle5" class="rectangle"></div>
 <div id="home">
-        <div id="rectangle1" class="rectangle"></div>
-        <div id="rectangle2" class="rectangle"></div>
         <div class="nav">
             <div class="nav-right">
-                <a href="#work">WORK</a>
-                <a href="#about">ABOUT</a>
-                <a href="#contact">CONTACT</a>
+                <a id="work-link" class="link" href="#work">WORK<span id="line-work" class="line"></span></a>
+                <a id="about-link" class="link" href="#about">ABOUT<span id="line-about" class="line"></span></a>
+                <a id="contact-link" class="link" href="#contact">CONTACT<span id="line-contact" class="line"></span></a>
             </div>
         </div>
     <div class="home-container">
         <div class="home-text">
-        <div class="name">GRAEME FRASER</div>
+        <div class="name"><span class="name-wrapper"><span class="letters">GRAEME FRASER</span></span></div>
         <div class="sub">Full-stack developer located in Ontario, Canada.</div>
         </div>
     </div>
@@ -35,7 +38,7 @@
             <div class="project-right">
                 <div class="desc-container">
                 <div class="project-title"><a href="https://www.cavespring.ca" target="_blank">CAVE SPRING VINEYARD</a></div>
-                <div class="project-desc">A webite me and a team member built using <a href="https://craftcms.com/" target="_blank">Craft CMS</a>, a PHP based content management system,
+                <div class="project-desc">A webite that I, together with a team member, built using <a href="https://craftcms.com/" target="_blank">Craft CMS</a>, a PHP based content management system,
                     to meet the client's needs. Part of the frontend was built with Vue for furthur functionality 
                     purposes while the rest used Twig, a PHP template engine made by Symphony. The backend was devloped with the Yii PHP framework. </div>
                 <div></div>
@@ -76,11 +79,30 @@
 </div>
 <div id="about">
     <div class="about-description">
-
+        <h2>ABOUT</h2>
+        I am a full-stack developer who enjoys learning new technologies. 
+        My favourite part of programming is building and designing the front-end. 
+        When I am not coding I am producing music.
     </div>
-
+    <div class="skills">
+        <h2>SKILLS AND TECHNOLOGIES</h2>
+        <span>Javascript, C#, PHP, Golang, Python, CSS, SCSS<br>
+        Vue.js, .NET, React, Gin Web Framework, MySQL, MSSQL</span>
+    </div>
+</div>
+<div id="contact">
+    <div class="contact-container">
+        <div class="contact-text">
+        <div class="email-desc">SEND ME AN EMAIL</div>
+        <div class="email"><a href="mailto:hello@gfrsr.com">hello@gfrsr.com</a></div>
+        <div class="social-media">
+            <img class="sm-icon" src="resources/img/linkedin.svg" />
+            <img class="sm-icon" src="resources/img/github.svg" />
+        </div>
+        </div>
+    </div>
 </div>
 
-<script src="resources/js/animation.js"></script>
+<script src="resources/js/animations.js"></script>
 </body>
 </html>
